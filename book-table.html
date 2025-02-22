@@ -47,7 +47,8 @@
         color: white;
       }
 
-      input, textarea {
+      input,
+      textarea {
         padding: 3px;
         border-radius: 5px;
         width: 100%;
@@ -122,14 +123,24 @@
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
       </label>
-      <label class="logo" style="color: #bc8c4c; font-family: Brush Script MT, Brush Script Std, cursive; font-size: 40px;">Im.Sp</label>
+      <label
+        class="logo"
+        style="
+          color: #bc8c4c;
+          font-family: Brush Script MT, Brush Script Std, cursive;
+          font-size: 40px;
+        "
+        >Tasty Trails</label
+      >
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about-us.html">About</a></li>
         <li><a href="menu.html">Menu</a></li>
         <li><a href="offers.html">Offers</a></li>
         <li><a href="contact-us.html">Contact</a></li>
-        <li><a class="active" href="book-table.html" class="book-btn">Book Now</a></li>
+        <li>
+          <a class="active" href="book-table.html" class="book-btn">Book Now</a>
+        </li>
       </ul>
     </nav>
 
@@ -150,13 +161,27 @@
             <legend>Reserve Your Table</legend>
 
             <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="Enter Your Full Name" required />
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter Your Full Name"
+              required
+            />
 
             <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="Enter Your Email (Optional)" />
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Your Email (Optional)"
+            />
 
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" placeholder="Enter Your Phone Number" required />
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Enter Your Phone Number"
+              required
+            />
 
             <label for="date">Reservation Date</label>
             <input type="date" id="date" required />
@@ -165,10 +190,20 @@
             <input type="time" id="time" required />
 
             <label for="seats">Number of Guests</label>
-            <input type="number" id="seats" placeholder="Total Guests" min="1" max="20" required />
+            <input
+              type="number"
+              id="seats"
+              placeholder="Total Guests"
+              min="1"
+              max="20"
+              required
+            />
 
             <label for="requests">Special Requests</label>
-            <textarea id="requests" placeholder="Enter any special requests"></textarea>
+            <textarea
+              id="requests"
+              placeholder="Enter any special requests"
+            ></textarea>
 
             <input type="submit" value="Confirm Reservation" />
           </fieldset>
@@ -182,13 +217,21 @@
           <div class="upper">
             <div class="topic">Opening Hours</div>
             <p class="para">Monday - Thursday : <span>7 AM to 12 PM</span></p>
-            <p class="para">Friday - Saturday : <span>7 AM to Midnight</span></p>
+            <p class="para">
+              Friday - Saturday : <span>7 AM to Midnight</span>
+            </p>
             <p class="para">Sunday : <span>9 AM to 12 PM</span></p>
           </div>
           <div class="lower">
             <div class="topic">Contact us</div>
-            <div class="phone"><a href="#"><i class="fas fa-phone-volume"></i>+01634 22 66 11</a></div>
-            <div class="email"><a href="#"><i class="fas fa-envelope"></i>imperialspice@gmail.com</a></div>
+            <div class="phone">
+              <a href="#"><i class="fas fa-phone-volume"></i>+01634 22 66 11</a>
+            </div>
+            <div class="email">
+              <a href="#"
+                ><i class="fas fa-envelope"></i>imperialspice@gmail.com</a
+              >
+            </div>
           </div>
         </div>
         <div class="middle box">
@@ -211,11 +254,13 @@
               <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
           </form>
-          <p class="f-p">Agree with <span><a href="">Terms & Conditions</a></span></p>
+          <p class="f-p">
+            Agree with <span><a href="">Terms & Conditions</a></span>
+          </p>
         </div>
       </div>
       <div class="bottom">
-        <p>Copyright © <a href="#">imperialspice.com</a> All rights reserved</p>
+        <p>Copyright © <a href="#">tastytrails.com</a> All rights reserved</p>
       </div>
     </footer>
   </body>

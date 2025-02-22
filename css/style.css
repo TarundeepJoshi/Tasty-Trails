@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -5,7 +7,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: montserrat;
+  font-family: "Roboto Slab", serif;
 }
 nav {
   background: transparent;
@@ -35,7 +37,6 @@ nav ul li {
 
 nav ul li .book-btn {
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
   background-color: #bc8c4c;
   font-weight: bold;
   font-size: 15px;
@@ -47,7 +48,6 @@ nav ul li a {
   border-radius: 3px;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
 }
 nav a.active,
 nav a:hover {
@@ -138,7 +138,6 @@ nav a:hover {
 
 #header .title p {
   color: white;
-  font-family: Brush Script MT, Brush Script Std, cursive;
   font-size: 50px;
   margin-bottom: 20px;
 }
@@ -148,10 +147,9 @@ nav a:hover {
   font-weight: bold;
   padding: 7px 18px;
   border: solid 1px #bc8c4c;
-  background-color: transparent;
+  background-color: black;
   text-decoration: none;
   border-radius: 5px;
-  font-family: monospace;
   font-size: 18px;
   transition: 0.5s;
 }
@@ -167,6 +165,7 @@ nav a:hover {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
+  place-items: center;
   padding: 20px;
   margin: 10px 30px;
 }
@@ -220,7 +219,6 @@ nav a:hover {
   padding-bottom: 20px;
   font-size: 35px;
   color: #bc8c4c;
-  font-family: Brush Script MT, Brush Script Std, cursive;
 }
 
 #dishes {
@@ -283,7 +281,6 @@ nav a:hover {
 .dish-desc a {
   font-size: 20px;
   color: green;
-  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   font-weight: bold;
 }
@@ -311,8 +308,7 @@ hr {
   border-radius: 5px;
   transition: 0.5s;
   font-weight: bold;
-  font-family: monospace;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 #dishes .check-now a:hover {
@@ -335,7 +331,6 @@ hr {
 
 #book-table .bt-grid-2 h1 {
   color: #bc8c4c;
-  font-family: Brush Script MT, Brush Script Std, cursive;
   font-size: 40px;
   text-align: center;
 }
@@ -344,7 +339,6 @@ hr {
   color: white;
   text-align: center;
   padding: 20px 0 0 10px;
-  font-family: monospace;
   font-size: 15px;
 }
 
@@ -374,7 +368,6 @@ hr {
 
 .NL-head h1 {
   color: white;
-  font-family: Brush Script MT, Brush Script Std, cursive;
   font-weight: bold;
   font-size: 40px;
   padding: 10px 0;
@@ -383,13 +376,11 @@ hr {
 .NL-head p {
   color: white;
   font-weight: bold;
-  font-family: cursive;
 }
 
 .subs .topic {
   color: #bc8c4c;
   font-weight: bold;
-  font-family: monospace;
   font-size: 25px;
   margin: 20px 20px 10px;
   text-transform: uppercase;
@@ -409,7 +400,7 @@ hr {
   background-color: #bc8c4c;
   padding: 4px 10px;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 18px;
   margin: 20px 0 0 0;
   transition: 0.5s;
 }
@@ -448,7 +439,6 @@ footer .content .topic {
   font-weight: bold;
   color: #bc8c4c;
   margin-bottom: 16px;
-  font-family: Brush Script MT, Brush Script Std, cursive;
 }
 footer .content p {
   text-align: justify;

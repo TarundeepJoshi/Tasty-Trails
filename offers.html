@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   </head>
 
-  <style>
+ <style>
     #header {
         height: 55vh;
     }
@@ -18,115 +18,117 @@
     }
 
     .offer-section {
-    padding: 50px;
-    text-align: center;
-        }
+        padding: 50px;
+        text-align: center;
+    }
 
-        .offer {
-            margin: 30px 0;
+    .offer {
+        margin: 30px 0;
+    }
+
+    .offer img {
+        width: 60%;
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .offer h2 {
+        margin: 10px 0;
+        font-size: 28px;
+        font-weight: bold;
+        color: #bc8c4c;
+    }
+
+    .offer-price {
+        color: #bc8c4c;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .offer-section h1 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        color: #bc8c4c;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .offer-section p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #555;
+    }
+
+    @media (max-width:768px){
+        #header {
+            height: 40vh;
         }
 
         .offer img {
-            width: 60%;
-        }
-
-        .offer h2 {
-            margin: 10px 0;
-        }
-
-        .offer-price {
-            color: #bc8c4c;
-            font-weight: bold;
+            width: 100%;
         }
 
         .offer-section h1 {
-            font-size: 2.5em;
-            margin-bottom: 30px;
-            color: #bc8c4c;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 30px;
         }
+    }
+    
+    #table {
+        background: url(img/bg55.png);
+        padding: 40px 0;
+    }
 
-        .offer-section p {
-            font-size: 16px;
-            line-height: 1.5;
-            color: #555;
-        }
+    #table table {
+        text-align: center;
+        margin: 30px auto;
+        border-collapse: collapse;
+        width: 90%;
+        max-width: 800px;
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-        .offer h2 {
-            font-size: 24px;
-            color: #333;
-        }
+    #table table tr th,
+    #table table tr td {
+        padding: 15px;
+        border-bottom: 2px solid #ddd;
+    }
 
-        .offer-price {
-            font-size: 18px;
-            color: #bc8c4c;
-            font-weight: bold;
-        }
+    #table table tr th {
+        background-color: #bc8c4c;
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
 
-        .offer-section .offer h2 {
-            color: #bc8c4c;
-            font-family: Brush Script MT, Brush Script Std, cursive;
-            font-size: 40px;
-        }
+    #table table tr:nth-child(odd){
+        background-color: #f9f9f9;
+    }
+    
+    #table table tr td {
+        font-size: 18px;
+        color: #333;
+        font-weight: 500;
+    }
 
-        @media (max-width:768px){
-            #header {
-                height: 40vh;
-            }
+    .d-offers {
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 20px 0;
+        background: linear-gradient(45deg, #ffcc80, #bc8c4c);
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-            .offer img {
-                width: 100%;
-            }
+    .d-offers h1 {
+        font-family: 'Brush Script MT', Brush Script Std, cursive;
+        color: white;
+        font-size: 36px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+</style>
 
-            .offer-section h1 {
-                font-size: 30px;
-            }
-        }
-        
-        #table {
-          background: url(img/bg55.png);
-        }
-
-        #table table{
-          text-align: center;
-          margin: 30px auto;
-          justify-content: center;
-          align-items: center;
-          border: dashed 2px black;
-        }
-
-        #table table tr th,
-        #table table tr td {
-          padding: 10px 50px;
-        }
-
-        #table table tr th {
-          background-color: #bc8c4c;
-          font-family: monospace;
-          font-size: 18px;
-        }
-
-        #table table tr:nth-child(odd){
-          background-color: #e0e0e0;
-        }
-        
-        #table table tr td {
-          font-family: monospace;
-          font-size: 18px;
-        }
-
-        .d-offers {
-          text-align: center;
-          margin-top: 20px;
-        }
-
-        .d-offers h1 {
-          font-family: Brush Script MT, Brush Script Std, cursive;
-          color: #bc8c4c;
-          font-size: 35px;
-        }
-
-  </style>
   <body>
     <!-- navbar start -->
     <nav>
@@ -134,7 +136,7 @@
         <label for="check" class="checkbtn">
           <i class="fas fa-bars"></i>
         </label>
-        <label class="logo" style="color: #bc8c4c; font-family: Brush Script MT, Brush Script Std, cursive; font-size: 40px;">Im.Sp</label>
+        <label class="logo" style="color: #bc8c4c; font-family: Brush Script MT, Brush Script Std, cursive; font-size: 40px;">Tasty Trails</label>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about-us.html">About</a></li>
@@ -149,7 +151,7 @@
     <!-- header -->
     <section id="header">
       <div class="title">
-          <p>Culinary Adventures at Unbeatable Prices <br>Explore Our Limited-Time Offers</p>
+          <p>"Culinary Adventures at Unbeatable Prices <br>Don’t Miss Our Limited-Time Offers!"</p>
       </div>
     </section>
     <!-- header end -->
@@ -202,9 +204,6 @@
             <h2>Weekend Brunch Extravaganza</h2>
             <p>Experience a culinary journey with our lavish weekend brunch buffet. Delight your taste buds with a symphony of flavors.</p>
             <p class="offer-price">Starting from $19.99 per person</p>
-            <div class="audio" style="margin-top: 10px;">
-              <audio src="img/audio.mp3" type="audio/mpeg" controls></audio>
-            </div>
         </div>
         <div class="offer">
             <img src="img/offer2.jpg" alt="Offer 2">
@@ -216,22 +215,28 @@
     <!-- offers end -->
 
      <!-- footer -->
-     <footer style="margin-top: 20px;">
+     <footer style="margin-top: 20px">
       <div class="content">
         <div class="left box">
           <div class="upper">
             <div class="topic">Opening Hours</div>
-              <p class="para">Monday - Thrusday &colon; <span>7 AM to 12 PM</span> </p>
-              <p class="para">Friday - Saturday &colon; <span>7 AM to Midnight</span> </p>
-              <p class="para">Saturday &colon; <span>9 AM to 12 PM</span> </p>
-            </div>
+            <p class="para">
+              Monday - Thursday &colon; <span>7 AM to 12 PM</span>
+            </p>
+            <p class="para">
+              Friday - Saturday &colon; <span>7 AM to Midnight</span>
+            </p>
+            <p class="para">Saturday &colon; <span>9 AM to 12 PM</span></p>
+          </div>
           <div class="lower">
             <div class="topic">Contact us</div>
             <div class="phone">
               <a href="#"><i class="fas fa-phone-volume"></i>+01634 22 66 11</a>
             </div>
             <div class="email">
-              <a href="#"><i class="fas fa-envelope"></i>imperialspice@gmail.com</a>
+              <a href="#"
+                ><i class="fas fa-envelope"></i>tastytrails@gmail.com</a
+              >
             </div>
           </div>
         </div>
@@ -255,11 +260,13 @@
               <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
           </form>
-          <p class="f-p">Agree with <span><a href="">Terms & Conditions</a></span></p>
+          <p class="f-p">
+            Agree with <span><a href="">Terms & Conditions</a></span>
+          </p>
         </div>
       </div>
       <div class="bottom">
-        <p>Copyright © <a href="#">imperialspice.com</a> All rights reserved</p>
+        <p>Copyright © <a href="#">tastytrails.com</a> All rights reserved</p>
       </div>
     </footer>
   <!-- footer end -->
