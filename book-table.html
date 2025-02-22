@@ -1,8 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Book a Table</title>
+    <meta charset="UTF-8" />
+    <title>Booking Table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore the best flavors with Tasty Trails. Enjoy delicious recipes, restaurant-quality dishes, and special food offers."
+    />
+    <meta
+      name="keywords"
+      content="food, recipes, dining, restaurant, best dishes, Tasty Trails, culinary adventures"
+    />
+    <meta name="author" content="Tasty Trails" />
+    <meta name="robots" content="index, follow" />
+
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -11,116 +25,115 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      #booking {
-        background: url(img/bg55.png);
-        padding: 120px 0;
-      }
-
-      #booking form {
-        margin: 0 250px;
-      }
-
-      #booking fieldset {
-        padding: 10px 22px;
-      }
-
-      #booking form label,
-      input {
-        margin: 10px 3px;
-      }
-
-      form fieldset {
-        background: white;
-      }
-
-      legend {
-        border: solid 1px;
-        border-radius: 5px;
-        background-color: rgba(12, 12, 12, 0.932);
-        color: white;
-        padding: 6px;
-        font-family: "Fira Sans", sans-serif;
-        font-size: 13px;
-      }
-
-      label {
-        font-family: "Fira Sans", sans-serif;
-        font-size: 14px;
-        color: white;
-      }
-
-      input,
-      textarea {
-        padding: 3px;
-        border-radius: 5px;
-        width: 100%;
-      }
-
-      input[type="submit"] {
-        background-color: #bc8c4c;
-        color: white;
-        font-weight: bold;
-        padding: 6px;
-        border-radius: 6px;
-        font-family: "Fira Sans", sans-serif;
-        font-size: 13px;
-      }
-
-      input[type="submit"]:hover {
-        cursor: pointer;
-      }
-
-      #header {
-        height: 80vh;
-        padding: 175px 10px;
-      }
-
-      @media (max-width: 952px) {
-        #header {
-          height: 45vh;
-        }
-      }
-
-      @media (max-width: 768px) {
-        nav ul {
-          float: none;
-          margin-right: 0;
-        }
-        nav ul li {
-          display: block;
-          text-align: center;
-          margin: 15px 0;
-        }
-        .checkbtn {
-          display: block;
-          margin-right: 20px;
-        }
-        #booking form {
-          margin: 0 20px;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .logo {
-          font-size: 24px;
-          padding-left: 10px;
-        }
-        nav ul li a {
-          font-size: 14px;
-          padding: 5px 10px;
-        }
-        .checkbtn {
-          font-size: 24px;
-          margin-right: 10px;
-        }
-        #booking form {
-          margin: 0 10px;
-        }
-      }
-    </style>
   </head>
+  <style>
+    #booking {
+      background: url(img/bg55.png);
+      padding: 120px 0;
+    }
+
+    #booking form {
+      margin: 0 250px;
+    }
+
+    #booking fieldset {
+      padding: 10px 22px;
+    }
+
+    #booking form label,
+    input {
+      margin: 10px 3px;
+    }
+
+    form fieldset {
+      background: white;
+    }
+
+    legend {
+      border: solid 1px;
+      border-radius: 5px;
+      background-color: rgba(12, 12, 12, 0.932);
+      color: white;
+      padding: 6px;
+      font-family: "Fira Sans", sans-serif;
+      font-size: 13px;
+    }
+
+    label {
+      font-family: "Fira Sans", sans-serif;
+      font-size: 14px;
+      color: white;
+    }
+
+    input,
+    textarea {
+      padding: 3px;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    input[type="submit"] {
+      background-color: #bc8c4c;
+      color: white;
+      font-weight: bold;
+      padding: 6px;
+      border-radius: 6px;
+      font-family: "Fira Sans", sans-serif;
+      font-size: 13px;
+    }
+
+    input[type="submit"]:hover {
+      cursor: pointer;
+    }
+
+    #header {
+      height: 80vh;
+      padding: 175px 10px;
+    }
+
+    @media (max-width: 952px) {
+      #header {
+        height: 45vh;
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        float: none;
+        margin-right: 0;
+      }
+      nav ul li {
+        display: block;
+        text-align: center;
+        margin: 15px 0;
+      }
+      .checkbtn {
+        display: block;
+        margin-right: 20px;
+      }
+      #booking form {
+        margin: 0 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        font-size: 24px;
+        padding-left: 10px;
+      }
+      nav ul li a {
+        font-size: 14px;
+        padding: 5px 10px;
+      }
+      .checkbtn {
+        font-size: 24px;
+        margin-right: 10px;
+      }
+      #booking form {
+        margin: 0 10px;
+      }
+    }
+  </style>
   <body>
     <nav>
       <input type="checkbox" id="check" />
