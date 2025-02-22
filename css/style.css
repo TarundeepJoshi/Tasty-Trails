@@ -6,6 +6,12 @@
   text-decoration: none;
   box-sizing: border-box;
 }
+
+h1,
+.logo {
+  font-family: "Dancing Script", cursive;
+}
+
 body {
   font-family: "Roboto Slab", serif;
 }
