@@ -1,130 +1,124 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Book a Table</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
+      #booking {
+        background: url(img/bg55.png);
+        padding: 120px 0;
+      }
 
+      #booking form {
+        margin: 0 250px;
+      }
 
+      #booking fieldset {
+        padding: 10px 22px;
+      }
 
-        #booking {
-            background: url(img/bg11.jpg);
-            padding: 120px 0;
+      #booking form label,
+      input {
+        margin: 10px 3px;
+      }
+
+      form fieldset {
+        background: white;
+      }
+
+      legend {
+        border: solid 1px;
+        border-radius: 5px;
+        background-color: rgba(12, 12, 12, 0.932);
+        color: white;
+        padding: 6px;
+        font-family: "Fira Sans", sans-serif;
+        font-size: 13px;
+      }
+
+      label {
+        font-family: "Fira Sans", sans-serif;
+        font-size: 14px;
+        color: white;
+      }
+
+      input, textarea {
+        padding: 3px;
+        border-radius: 5px;
+        width: 100%;
+      }
+
+      input[type="submit"] {
+        background-color: #bc8c4c;
+        color: white;
+        font-weight: bold;
+        padding: 6px;
+        border-radius: 6px;
+        font-family: "Fira Sans", sans-serif;
+        font-size: 13px;
+      }
+
+      input[type="submit"]:hover {
+        cursor: pointer;
+      }
+
+      #header {
+        height: 80vh;
+        padding: 175px 10px;
+      }
+
+      @media (max-width: 952px) {
+        #header {
+          height: 45vh;
         }
+      }
 
+      @media (max-width: 768px) {
+        nav ul {
+          float: none;
+          margin-right: 0;
+        }
+        nav ul li {
+          display: block;
+          text-align: center;
+          margin: 15px 0;
+        }
+        .checkbtn {
+          display: block;
+          margin-right: 20px;
+        }
         #booking form {
-            margin: 0 250px;
+          margin: 0 20px;
         }
+      }
 
-        #booking fieldset {
-            padding: 10px 22px;
+      @media (max-width: 480px) {
+        .logo {
+          font-size: 24px;
+          padding-left: 10px;
         }
-
-        #booking form label, input {
-            margin: 10px 3px;
+        nav ul li a {
+          font-size: 14px;
+          padding: 5px 10px;
         }
-
-        form fieldset {
-            background: rgba(12, 12, 12, 0.932);
+        .checkbtn {
+          font-size: 24px;
+          margin-right: 10px;
         }
-
-        legend {
-            border: solid 1px;
-            border-radius: 5px;
-            background-color: rgba(12, 12, 12, 0.932);
-            color: white;
-            padding: 6px;
-            font-family: "Fira Sans", sans-serif;
-            font-size: 13px;
+        #booking form {
+          margin: 0 10px;
         }
-
-        label {
-            font-family: "Fira Sans", sans-serif;
-            font-size: 14px;
-            color: white;
-        }
-
-        input {
-            padding: 3px;
-            border-radius: 5px;
-        }
-
-        input[type="submit"] {
-            background-color: #bc8c4c;
-            color: white;
-            font-weight: bold;
-            padding: 6px;
-            border-radius: 6px;
-            font-family: "Fira Sans", sans-serif;
-            font-size: 13px;
-        }
-
-        input[type="submit"]:hover {
-            cursor: pointer;
-        }
-
-
-@media (max-width: 952px) {
-  /* Existing rules... */
-
-  #header {
-    height: 45vh;
-  }
-
-  .logo {
-    font-size: 30px;
-    padding-left: 20px; /* Adjust as needed */
-  }
-}
-
-@media (max-width: 768px) {
-  /* Adjust styles for tablets and smaller screens */
-  nav ul {
-    float: none;
-    margin-right: 0;
-  }
-  nav ul li {
-    display: block;
-    text-align: center;
-    margin: 15px 0;
-  }
-  .checkbtn {
-    display: block;
-    margin-right: 20px;
-  }
-  #booking form {
-    margin: 0 20px; /* Adjust as needed */
-  }
-}
-
-/* Additional media query for very small screens */
-@media (max-width: 480px) {
-  .logo {
-    font-size: 24px;
-    padding-left: 10px; /* Adjust as needed */
-  }
-  nav ul li a {
-    font-size: 14px;
-    padding: 5px 10px;
-  }
-  .checkbtn {
-    font-size: 24px;
-    margin-right: 10px;
-  }
-  #booking form {
-    margin: 0 10px; /* Adjust as needed */
-  }
-}
-
-
+      }
     </style>
-</head>
-<body>
-    <!-- navbar start -->
+  </head>
+  <body>
     <nav>
-      <input type="checkbox" id="check">
+      <input type="checkbox" id="check" />
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
       </label>
@@ -138,72 +132,63 @@
         <li><a class="active" href="book-table.html" class="book-btn">Book Now</a></li>
       </ul>
     </nav>
-    <!-- navbar end -->
-  
-      <!-- header -->
-      <section id="header">
-        <div class="logo">
-            <img src="img/logo.png" alt="logo" width="15%">
-        </div>
-        <div class="title">
-            <p>Your Reservation, Your Experience:<br> Create Your Perfect Dining Memory by Booking a Table Online</p>
-            <a href="#booking">Book Now</a>
-        </div>
-      </section>
-      <!-- header end -->
-      <br><br>
-      <!-- booking -->
-    <div id="booking"><br><br><br>
-    <div class="booking">
+
+    <section id="header">
+      <div class="title">
+        <p>
+          Your Reservation, Your Experience:<br />
+          Create Your Perfect Dining Memory by Booking a Table Online
+        </p>
+        <a href="#booking">Book Now</a>
+      </div>
+    </section>
+
+    <div id="booking">
+      <div class="booking">
         <form>
-        <fieldset>
-            <legend>Fill Your Detail</legend>
+          <fieldset>
+            <legend>Reserve Your Table</legend>
 
-            <label>Your Name</label>
-            <input type="text" placeholder="Enter Your Name" required>
-            <br>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter Your Full Name" required />
 
-            <label>Your Email</label>
-            <input type="email" placeholder="Enter Your Email(Optional)">
-            <br>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter Your Email (Optional)" />
 
-            <label>Your Phone</label>
-            <input type="tel" placeholder="Enter Your Phone" required>
-            <br>
-            
-            <label>Timimg</label>
-            <input type="time" placeholder="Enter Timimg" required>
-            <br>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter Your Phone Number" required />
 
-            <label>Total Seats</label>
-            <input type="number" placeholder="Seats" min="4" max="20" required>
-            <br>
-            
-            <input type="submit">
-        </fieldset>
+            <label for="date">Reservation Date</label>
+            <input type="date" id="date" required />
+
+            <label for="time">Reservation Time</label>
+            <input type="time" id="time" required />
+
+            <label for="seats">Number of Guests</label>
+            <input type="number" id="seats" placeholder="Total Guests" min="1" max="20" required />
+
+            <label for="requests">Special Requests</label>
+            <textarea id="requests" placeholder="Enter any special requests"></textarea>
+
+            <input type="submit" value="Confirm Reservation" />
+          </fieldset>
         </form>
+      </div>
     </div>
-  </div>
-    <!--END OF booking-->
 
-     <!-- footer -->
-     <footer style="margin-top: 30px;">
+    <footer style="margin-top: 30px">
       <div class="content">
         <div class="left box">
           <div class="upper">
             <div class="topic">Opening Hours</div>
-              <p class="para">Monday - Thrusday &colon; <span>7 AM to 12 PM</span> </p>
-              <p class="para">Friday - Saturday &colon; <span>7 AM to Midnight</span> </p>
-              <p class="para">Saturday &colon; <span>9 AM to 12 PM</span> </p>
-            </div>
+            <p class="para">Monday - Thursday : <span>7 AM to 12 PM</span></p>
+            <p class="para">Friday - Saturday : <span>7 AM to Midnight</span></p>
+            <p class="para">Sunday : <span>9 AM to 12 PM</span></p>
+          </div>
           <div class="lower">
             <div class="topic">Contact us</div>
-            <div class="phone">
-              <a href="#"><i class="fas fa-phone-volume"></i>+01634 22 66 11</a>
-            </div>
-            <div class="email">
-              <a href="#"><i class="fas fa-envelope"></i>imperialspice@gmail.com</a>
-            </div>
+            <div class="phone"><a href="#"><i class="fas fa-phone-volume"></i>+01634 22 66 11</a></div>
+            <div class="email"><a href="#"><i class="fas fa-envelope"></i>imperialspice@gmail.com</a></div>
           </div>
         </div>
         <div class="middle box">
@@ -233,6 +218,5 @@
         <p>Copyright © <a href="#">imperialspice.com</a> All rights reserved</p>
       </div>
     </footer>
-  <!-- footer end -->
-</body>
+  </body>
 </html>

@@ -116,7 +116,7 @@
 /* header */
 
 #header {
-    background: url(../img/bg.jpg);
+    background: url(../img/bg55.jpg);
     background-size: cover;
     height: 100vh;
 }
@@ -227,7 +227,7 @@
 #dishes {
   width: 100%;
   padding: 20px 0;
-  background-image: url('../img/bg55.png');
+  background-image: url('../img/bg55.jpeg');
 }
 
 .F-dishes {
